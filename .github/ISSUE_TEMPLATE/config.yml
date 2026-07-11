@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Security report
-    url: https://github.com/T50-Systems/.github/security/policy
+    url: https://github.com/T50-Systems/.github/security/advisories/new
     about: Please do not report security vulnerabilities in public issues.
   - name: Organization profile
     url: https://github.com/T50-Systems
