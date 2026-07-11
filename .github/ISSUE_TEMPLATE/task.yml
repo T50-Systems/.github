@@ -1,7 +1,6 @@
 name: Task
 description: Track maintenance, documentation, or internal work
 title: "chore: "
-labels: ["task"]
 body:
   - type: textarea
     id: objective

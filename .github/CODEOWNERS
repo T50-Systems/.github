@@ -1,0 +1,11 @@
+# Organization community-health defaults
+* @cervantesh
+
+# Policy-critical files
+/SECURITY.md @cervantesh
+/.github/SECURITY.md @cervantesh
+/CODE_OF_CONDUCT.md @cervantesh
+/CONTRIBUTING.md @cervantesh
+/.github/ISSUE_TEMPLATE/ @cervantesh
+/.github/pull_request_template.md @cervantesh
+/PROFILE/README.md @cervantesh
