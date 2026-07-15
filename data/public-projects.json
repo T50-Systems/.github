@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "organization": "T50-Systems",
+  "repositories": [
+    {
+      "name": "pi-anchor-edit-core",
+      "approved": true,
+      "status": "Active",
+      "intendedUsers": "Editing-tool maintainers"
+    },
+    {
+      "name": "pi-compaction-improvement",
+      "approved": true,
+      "status": "Active",
+      "intendedUsers": "Long-running Pi sessions"
+    },
+    {
+      "name": "pi-fff-plus",
+      "approved": true,
+      "status": "Active",
+      "intendedUsers": "Pi users on Windows and multi-repo workspaces"
+    },
+    {
+      "name": "pi-github-admin",
+      "approved": true,
+      "status": "Active",
+      "intendedUsers": "Maintainers automating repository operations"
+    },
+    {
+      "name": "pi-hashline-edit-plus",
+      "approved": true,
+      "status": "Active",
+      "intendedUsers": "Pi agents and extension authors"
+    },
+    {
+      "name": "pi-smart-edit",
+      "approved": true,
+      "status": "Active",
+      "intendedUsers": "Pi extension and automation authors"
+    },
+    {
+      "name": "pi-thread-goal",
+      "approved": true,
+      "status": "Active",
+      "intendedUsers": "Pi users running multi-turn tasks"
+    },
+    {
+      "name": "pi-work-guard",
+      "approved": true,
+      "status": "Active",
+      "intendedUsers": "Pi users operating in large repositories"
+    }
+  ]
+}

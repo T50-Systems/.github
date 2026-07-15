@@ -4,16 +4,16 @@ T50-Systems builds focused software products, AI-oriented developer tooling, and
 
 ## Public projects
 
-| Project | Purpose | Intended users | Status |
-|---|---|---|---|
-| [`pi-thread-goal`](https://github.com/T50-Systems/pi-thread-goal) | Persistent, branch-aware autonomous goals for Pi | Pi users running multi-turn tasks | Active |
-| [`pi-hashline-edit-plus`](https://github.com/T50-Systems/pi-hashline-edit-plus) | Safer hash-anchored `read`/`edit` overrides | Pi agents and extension authors | Active |
-| [`pi-anchor-edit-core`](https://github.com/T50-Systems/pi-anchor-edit-core) | Shared anchor-editing engine | Editing-tool maintainers | Active |
-| [`pi-smart-edit`](https://github.com/T50-Systems/pi-smart-edit) | Higher-level stale-anchor recovery helpers | Pi extension and automation authors | Active |
-| [`pi-work-guard`](https://github.com/T50-Systems/pi-work-guard) | Bounded-output and workflow safety controls | Pi users operating in large repositories | Active |
-| [`pi-fff-plus`](https://github.com/T50-Systems/pi-fff-plus) | Multi-root fuzzy path and content search | Pi users on Windows and multi-repo workspaces | Active |
-| [`pi-compaction-improvement`](https://github.com/T50-Systems/pi-compaction-improvement) | Proactive, validated context compaction | Long-running Pi sessions | Active |
-| [`pi-github-admin`](https://github.com/T50-Systems/pi-github-admin) | Declarative GitHub administration tools | Maintainers automating repository operations | Active |
+| Project | Purpose | Topics | Intended users | Status |
+|---|---|---|---|---|
+| [`pi-anchor-edit-core`](https://github.com/T50-Systems/pi-anchor-edit-core) | Shared TypeScript anchor-editing core for Pi hashline read/edit and smart-edit packages. | `developer-tools`, `editing`, `hashline`, `library`, `pi`, `typescript` | Editing-tool maintainers | Active |
+| [`pi-compaction-improvement`](https://github.com/T50-Systems/pi-compaction-improvement) | Pi extension for proactive autocompaction, richer summaries, validation contracts, and safe fallback. | `automation`, `compaction`, `context-management`, `pi`, `pi-extension`, `typescript` | Long-running Pi sessions | Active |
+| [`pi-fff-plus`](https://github.com/T50-Systems/pi-fff-plus) | Safer FFF-powered file and content search tools for Pi across Windows and multi-root workspaces. | `developer-tools`, `fff`, `pi`, `pi-extension`, `search`, `typescript` | Pi users on Windows and multi-repo workspaces | Active |
+| [`pi-github-admin`](https://github.com/T50-Systems/pi-github-admin) | Pi-native GitHub admin tools for repositories, branch protection, issues, releases, PRs, and verification. | `automation`, `devops`, `github`, `pi`, `pi-extension`, `typescript` | Maintainers automating repository operations | Active |
+| [`pi-hashline-edit-plus`](https://github.com/T50-Systems/pi-hashline-edit-plus) | Cross-platform Pi read/edit override using hashline anchors to make file edits safer and recoverable. | `developer-tools`, `editing`, `hashline`, `pi`, `pi-extension`, `typescript` | Pi agents and extension authors | Active |
+| [`pi-smart-edit`](https://github.com/T50-Systems/pi-smart-edit) | Smart Pi editing helpers for stale-anchor recovery, semantic replacements, and retryable hashline edits. | `developer-tools`, `editing`, `pi`, `pi-extension`, `stale-anchors`, `typescript` | Pi extension and automation authors | Active |
+| [`pi-thread-goal`](https://github.com/T50-Systems/pi-thread-goal) | Pi-native Claude-style /goal extension with branch-aware state, guarded tools, and automatic continuation. | `agent`, `goal`, `pi`, `pi-extension`, `typescript`, `workflow` | Pi users running multi-turn tasks | Active |
+| [`pi-work-guard`](https://github.com/T50-Systems/pi-work-guard) | Memory-safe Pi workflow guard for bounded shell output, checkpoints, phases, and file-size budgets. | `developer-tools`, `pi`, `pi-extension`, `safety`, `typescript`, `workflow` | Pi users operating in large repositories | Active |
 
 Private product and research repositories are intentionally omitted from the public directory.
 
@@ -30,4 +30,4 @@ Report vulnerabilities privately through the affected repository's Security tab.
 
 ## Profile maintenance
 
-The community policy maintainer reviews this directory quarterly and after public repository launches, archives, or renames. Entries must be removed or updated when their status changes.
+The community policy maintainer reviews the approved manifest and generated directory quarterly and after public repository launches, archives, or renames. Repository descriptions and topics are refreshed from public GitHub metadata through a review-only pull request.

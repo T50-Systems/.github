@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "repositories": [
+    {
+      "name": "zeta-tool",
+      "visibility": "public",
+      "private": false,
+      "description": "A pipe | and slash \\\\ example",
+      "topics": ["zeta", "automation"]
+    },
+    {
+      "name": "alpha-tool",
+      "visibility": "public",
+      "private": false,
+      "description": "First line\nsecond line",
+      "topics": []
+    }
+  ]
+}
