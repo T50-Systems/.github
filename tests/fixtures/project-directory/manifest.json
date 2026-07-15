@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "organization": "Example-Org",
+  "repositories": [
+    {
+      "name": "zeta-tool",
+      "approved": true,
+      "status": "Preview | opt-in",
+      "intendedUsers": "Builders\\maintainers"
+    },
+    {
+      "name": "alpha-tool",
+      "approved": true,
+      "status": "Active",
+      "intendedUsers": "People\nwith workflows"
+    }
+  ]
+}

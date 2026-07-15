@@ -20,9 +20,14 @@ See [`docs/INHERITANCE.md`](docs/INHERITANCE.md) for recognized paths, override 
 npm ci
 npm test
 npm run validate
+npm run directory:dry-run
 ```
 
-The same commands run on pull requests. Validation parses issue forms, rejects nonportable default labels, checks required contact links, verifies local Markdown links, and detects drift between the canonical and compatibility security policy copies.
+The same test and validation commands run on pull requests. Validation parses issue forms, rejects nonportable default labels, checks required contact links, verifies local Markdown links, detects drift between the canonical and compatibility security policy copies, and fails when `PROFILE/README.md` differs from its approved inputs.
+
+## Public project directory
+
+The organization profile is rendered deterministically from a checked-in public-repository allowlist and normalized public metadata snapshot. See [`docs/PROJECT_DIRECTORY.md`](docs/PROJECT_DIRECTORY.md) for the editorial metadata contract, drift-check and dry-run commands, private-repository exclusion, and review-only refresh automation.
 
 ## Adoption audit
 

@@ -1,0 +1,58 @@
+name: Refresh public project directory
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 9 1 * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: refresh-public-project-directory
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install
+        run: npm ci
+      - name: Refresh approved public metadata and profile
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run directory:refresh
+      - name: Validate generated changes
+        run: |
+          npm test
+          npm run validate
+      - name: Open review pull request
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          token: ${{ github.token }}
+          branch: automation/refresh-public-project-directory
+          delete-branch: true
+          commit-message: "chore: refresh public project directory"
+          title: "chore: refresh public project directory"
+          body: |
+            Refreshes the checked-in public metadata snapshot and generated organization profile from the explicitly approved allowlist.
+
+            - Reads only exact allowlisted public repository endpoints.
+            - Does not change editorial status or intended-user metadata.
+            - Requires human review; this workflow never merges the pull request.
+            - Independent-review enforcement remains tracked in #10.
+          draft: always-true
+          add-paths: |
+            data/public-project-metadata.json
+            PROFILE/README.md

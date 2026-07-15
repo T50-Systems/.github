@@ -5,8 +5,12 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "validate": "node scripts/validate-community.mjs",
-    "audit:adoption": "node scripts/audit-adoption.mjs"
+    "validate": "node scripts/validate-community.mjs && node scripts/generate-project-directory.mjs --check",
+    "audit:adoption": "node scripts/audit-adoption.mjs",
+    "directory:generate": "node scripts/generate-project-directory.mjs",
+    "directory:check": "node scripts/generate-project-directory.mjs --check",
+    "directory:dry-run": "node scripts/generate-project-directory.mjs --dry-run",
+    "directory:refresh": "node scripts/refresh-project-metadata.mjs && node scripts/generate-project-directory.mjs"
   },
   "devDependencies": {
     "yaml": "^2.8.1"
