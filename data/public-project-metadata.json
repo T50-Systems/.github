@@ -6,56 +6,112 @@
       "visibility": "public",
       "private": false,
       "description": "Shared TypeScript anchor-editing core for Pi hashline read/edit and smart-edit packages.",
-      "topics": ["developer-tools", "editing", "hashline", "library", "pi", "typescript"]
+      "topics": [
+        "developer-tools",
+        "editing",
+        "hashline",
+        "library",
+        "pi",
+        "typescript"
+      ]
     },
     {
       "name": "pi-compaction-improvement",
       "visibility": "public",
       "private": false,
       "description": "Pi extension for proactive autocompaction, richer summaries, validation contracts, and safe fallback.",
-      "topics": ["automation", "compaction", "context-management", "pi", "pi-extension", "typescript"]
+      "topics": [
+        "automation",
+        "compaction",
+        "context-management",
+        "pi",
+        "pi-extension",
+        "typescript"
+      ]
     },
     {
       "name": "pi-fff-plus",
       "visibility": "public",
       "private": false,
       "description": "Safer FFF-powered file and content search tools for Pi across Windows and multi-root workspaces.",
-      "topics": ["developer-tools", "fff", "pi", "pi-extension", "search", "typescript"]
+      "topics": [
+        "developer-tools",
+        "fff",
+        "pi",
+        "pi-extension",
+        "search",
+        "typescript"
+      ]
     },
     {
       "name": "pi-github-admin",
       "visibility": "public",
       "private": false,
       "description": "Pi-native GitHub admin tools for repositories, branch protection, issues, releases, PRs, and verification.",
-      "topics": ["automation", "devops", "github", "pi", "pi-extension", "typescript"]
+      "topics": [
+        "automation",
+        "devops",
+        "github",
+        "pi",
+        "pi-extension",
+        "typescript"
+      ]
     },
     {
       "name": "pi-hashline-edit-plus",
       "visibility": "public",
       "private": false,
       "description": "Cross-platform Pi read/edit override using hashline anchors to make file edits safer and recoverable.",
-      "topics": ["developer-tools", "editing", "hashline", "pi", "pi-extension", "typescript"]
+      "topics": [
+        "developer-tools",
+        "editing",
+        "hashline",
+        "pi",
+        "pi-extension",
+        "typescript"
+      ]
     },
     {
       "name": "pi-smart-edit",
       "visibility": "public",
       "private": false,
       "description": "Smart Pi editing helpers for stale-anchor recovery, semantic replacements, and retryable hashline edits.",
-      "topics": ["developer-tools", "editing", "pi", "pi-extension", "stale-anchors", "typescript"]
+      "topics": [
+        "developer-tools",
+        "editing",
+        "pi",
+        "pi-extension",
+        "stale-anchors",
+        "typescript"
+      ]
     },
     {
       "name": "pi-thread-goal",
       "visibility": "public",
       "private": false,
       "description": "Pi-native Claude-style /goal extension with branch-aware state, guarded tools, and automatic continuation.",
-      "topics": ["agent", "goal", "pi", "pi-extension", "typescript", "workflow"]
+      "topics": [
+        "agent",
+        "goal",
+        "pi",
+        "pi-extension",
+        "typescript",
+        "workflow"
+      ]
     },
     {
       "name": "pi-work-guard",
       "visibility": "public",
       "private": false,
       "description": "Memory-safe Pi workflow guard for bounded shell output, checkpoints, phases, and file-size budgets.",
-      "topics": ["developer-tools", "pi", "pi-extension", "safety", "typescript", "workflow"]
+      "topics": [
+        "developer-tools",
+        "pi",
+        "pi-extension",
+        "safety",
+        "typescript",
+        "workflow"
+      ]
     }
   ]
 }
