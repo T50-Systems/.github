@@ -17,10 +17,10 @@ See [`docs/INHERITANCE.md`](docs/INHERITANCE.md) for recognized paths, override 
 ## Local validation
 
 ```bash
-npm ci
-npm test
-npm run validate
-npm run directory:dry-run
+pnpm install --frozen-lockfile
+pnpm test
+pnpm run validate
+pnpm run directory:dry-run
 ```
 
 The same test and validation commands run on pull requests. Validation parses issue forms, rejects nonportable default labels, checks required contact links, verifies local Markdown links, detects drift between the canonical and compatibility security policy copies, and fails when `PROFILE/README.md` differs from its approved inputs.
@@ -34,7 +34,7 @@ The organization profile is rendered deterministically from a checked-in public-
 With a GitHub token that can read the target repositories:
 
 ```bash
-GITHUB_TOKEN="..." npm run audit:adoption
+GITHUB_TOKEN="..." pnpm run audit:adoption
 ```
 
 The scheduled workflow audits active public repositories with read-only permissions and writes a bounded job summary. Private repositories are excluded from public workflow output unless a separately approved private audit channel is configured.

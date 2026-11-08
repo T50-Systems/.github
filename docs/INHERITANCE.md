@@ -15,11 +15,11 @@ GitHub uses this public `.github` repository as the organization default when a 
 
 ## Canonical source and duplication
 
-`/SECURITY.md` is the canonical editable source. `/.github/SECURITY.md` exists for compatibility and must remain byte-identical; `npm run validate` detects drift.
+`/SECURITY.md` is the canonical editable source. `/.github/SECURITY.md` exists for compatibility and must remain byte-identical; `pnpm run validate` detects drift.
 
 ## Preview checklist
 
-1. Run `npm ci`, `npm test`, and `npm run validate` locally.
+1. Run `pnpm install --frozen-lockfile`, `pnpm test`, and `pnpm run validate` locally.
 2. Inspect changed YAML with a renderer or a draft branch in this repository.
 3. Open the repository's **Issues → New issue** page and verify form titles, fields, and contact links.
 4. Open a draft pull request in a repository without a local template to verify inheritance.
