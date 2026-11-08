@@ -10,10 +10,10 @@ The renderer never queries GitHub. It validates both inputs, rejects private or 
 ## Maintainer commands
 
 ```bash
-npm run directory:generate  # write PROFILE/README.md from checked-in inputs
-npm run directory:check     # fail if the generated profile has drifted
-npm run directory:dry-run   # print the generated profile without writing
-npm run directory:refresh   # query approved public repos, refresh metadata, then render
+pnpm run directory:generate  # write PROFILE/README.md from checked-in inputs
+pnpm run directory:check     # fail if the generated profile has drifted
+pnpm run directory:dry-run   # print the generated profile without writing
+pnpm run directory:refresh   # query approved public repos, refresh metadata, then render
 ```
 
 `directory:refresh` is the only networked operation. It requests the GitHub repository endpoint for each exact allowlisted name; it never enumerates organization repositories. A response is rejected unless its owner/name match and GitHub marks it explicitly public. Adding, removing, or changing status/intended-user metadata always requires a reviewed manifest edit.
